@@ -33,7 +33,5 @@ Construido con 🛠️ <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
-<div style="background-color: blue; height: 2vh; width: 5vw">
-  <b >Alkemy Labs</b>
-</div>  <br />
-A Fernando Biaus 🙌 por su ayuda 👏 (video explicativo conexión a base de datos mongo) 
+<b >Alkemy Labs</b> <br />
+A Fernando Biaus 🙌 👏 (video explicativo conexión a base de datos mongo) 
