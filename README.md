@@ -32,4 +32,4 @@ Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
 <a href="https://alkemy.org/labs"><b >Alkemy Labs</b></a> <br />
-<q>Fernando Biaus</q> 🙌 👏 (video explicativo conexión a base de datos mongo) 
+<q>Fernando Biaus</q> (video explicativo conexión a base de datos mongo) 
