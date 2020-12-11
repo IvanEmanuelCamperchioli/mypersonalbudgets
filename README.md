@@ -9,7 +9,7 @@ Si quieres ver una demostración de la app ingresa aquí <a href="https://mypers
 # Pre-requisitos 📋 <br />
 Tener instalado Node.js en el sistema, versión usada (12.18.3) <br />
 incluir un archivo ".env" en la raíz de la carpeta BackEnd con la variables de entorno MONGO_DB para la conección a la base de datos de MongoDB <br/>
-Puedes hacerlo creándote una cuenta en MongoDB atlas <br />
+Puedes hacerlo creando una cuenta en MongoDB atlas <br />
 bien explicado aquí: <a href="https://www.youtube.com/watch?v=ZVRaBD3-m4o">Backend con NODE JS / EXPRESS / MONGO</a> <br />
 
 # Instalación 🔧 <br />
@@ -33,5 +33,7 @@ Construido con 🛠️ <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
-<b style="color: blue !important;">Alkemy Labs</b> <br />
+<div style="background-color: blue; height: 2vh; width: 5vw">
+  <b >Alkemy Labs</b>
+</div>  <br />
 A Fernando Biaus 🙌 por su ayuda 👏 (video explicativo conexión a base de datos mongo) 
