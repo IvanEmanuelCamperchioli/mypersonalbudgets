@@ -27,7 +27,7 @@ Construido con 🛠️ <br />
 <i>Express.js</i> <br />
 <i>Mongoose</i> <br />
 <i>MongoDB</i> <br /></pre>
-  <h4>Autores ✒️</h4> <br />
+  <h4>Autores ✒️</h4>
 Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
