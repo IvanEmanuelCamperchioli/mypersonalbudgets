@@ -21,7 +21,7 @@ repetir este paso para la carpeta BackEnd, ejemplo: <br />
 Instalará los paquetes necesarios y luego correr el comando: <br />
 
 npm start - tanto en back como en front <br />
-<h3>Construido con</h3> 🛠️ <br />
+# Construido con 🛠️ <br />
 <pre><i>React</i> <br />
 <i>Node.js</i> <br />
 <i>Express.js</i> <br />
