@@ -1,4 +1,4 @@
-# Mi Presupuesto ✈️ <br />
+# Mi Presupuesto 💰 <br />
 Web app para interactuar con presupuestos personales
 
 # Empezar 🚀 <br />
