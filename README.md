@@ -1,4 +1,4 @@
-My Itinerary ✈️
+My Itinerary ✈️ <br />
 Proyecto Sitio de Itinerarios desarrollado full stack MERN
 
 Empezar 🚀
@@ -17,20 +17,20 @@ repetir este paso para la carpeta BackEnd, ejemplo: <br />
 
   C:\User\Documents\Proyect\frontend>npm install
 
-Instalará los paquetes necesarios y luego correr el comando:
+Instalará los paquetes necesarios y luego correr el comando: <br />
 
-npm start - tanto en back como en front
-Construido con 🛠️
-React
-Redux
-Node.js
-Express.js
-Mongoose
-MongoDB
-JsonWebToken
-Autores ✒️
-Proyecto Challenge de Mindhub
-Principal - Ivan Emanuel Camperchioli
+npm start - tanto en back como en front <br />
+Construido con 🛠️ <br />
+React <br />
+Redux <br />
+Node.js <br />
+Express.js <br />
+Mongoose <br />
+MongoDB <br />
+JsonWebToken <br />
+Autores ✒️ <br />
+Proyecto Challenge de Mindhub <br />
+Principal - Ivan Emanuel Camperchioli <br />
 
-Mi Gratitud 🎁📢
-A Fernando Biaus 🙌 por su ayuda 👏
+Mi Gratitud 🎁📢 <br />
+A Fernando Biaus 🙌 por su ayuda 👏 (video explicativo conexión a base de datos mongo) 
