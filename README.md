@@ -22,13 +22,13 @@ Instalará los paquetes necesarios y luego correr el comando: <br />
 
 npm start - tanto en back como en front <br />
 Construido con 🛠️ <br />
-<i>React</i> <br />
+<pre><i>React</i> <br />
 <i>Redux</i> <br />
 <i>Node.js</i> <br />
 <i>Express.js<i/> <br />
 <i>Mongoose</i> <br />
 <i>MongoDB</i> <br />
-<i>JsonWebToken</i> <br />
+<i>JsonWebToken</i></pre> <br />
   <h4>Autores</h4> ✒️ <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
