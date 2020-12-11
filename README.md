@@ -25,7 +25,7 @@ Construido con 🛠️ <br />
 <pre><i>React</i> <br />
 <i>Redux</i> <br />
 <i>Node.js</i> <br />
-<i>Express.js<i/> <br />
+<i>Express.js</i> <br />
 <i>Mongoose</i> <br />
 <i>MongoDB</i> <br />
 <i>JsonWebToken</i></pre> <br />
