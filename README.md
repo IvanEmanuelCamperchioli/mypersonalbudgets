@@ -27,9 +27,9 @@ Construido con 🛠️ <br />
 <i>Express.js</i> <br />
 <i>Mongoose</i> <br />
 <i>MongoDB</i> <br /></pre> <br />
-  <h4>Autores</h4> ✒️ <br />
+  <h4>Autores ✒️</h4> <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
 <b >Alkemy Labs</b> <br />
-Fernando Biaus 🙌 👏 (video explicativo conexión a base de datos mongo) 
+<q>Fernando Biaus</q> 🙌 👏 (video explicativo conexión a base de datos mongo) 
