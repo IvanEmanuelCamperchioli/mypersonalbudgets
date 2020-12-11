@@ -1,0 +1,66 @@
+.header {
+    background-image: linear-gradient(#fff, #f1f1f1e0);
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header .menu {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    background-color: #519AF7;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 10px 0 5px;
+}
+  
+.header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0.2px 0.2px 3px #56ff91;
+    color: #3DB366;
+}
+  
+.header .menu:hover {
+    opacity: 0.7;
+    transition: 0.35s;
+}
+
+@media only screen and (max-device-width: 700px){
+    .header {
+        height: 11vh;
+    }
+    .header .logo {
+        font-size: 40px;
+    }
+    .header-right .menu {
+        font-size: 25px;
+    }
+    .header {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-right .menu {
+        margin-top: 1.5vh;
+    }
+}
+
+@media only screen and (max-device-width: 400px){
+    .header .logo {
+        font-size: 45px;
+    }
+    .header-right .menu {
+        font-size: 30px;
+    }
+}

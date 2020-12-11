@@ -1,0 +1,188 @@
+.buttonForm {
+    text-transform: uppercase;
+    background-color: #3DB366 !important;
+    border: none !important;
+}
+
+.buttonForm:focus {
+    box-shadow: none !important;
+}
+
+.buttonForm:hover {
+    background-color: #3DB366 !important;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.38) !important;
+    transition: 0.25s;
+}
+
+.inputSelect {
+    float: right;
+}
+
+.inputSelect:focus {
+    outline: none;
+}
+
+.toast-text {
+    font-family: 'Mulish', sans-serif;
+}
+
+.spinner-table {
+    margin: 20vh 0 50vh 20vw; 
+    width: 5rem !important;
+    height: 5rem !important; 
+}
+
+.table-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.div-entry-table {
+    width: 45%;
+    max-height: 110vh;
+    overflow: scroll;
+}
+
+.div-entry-table::-webkit-scrollbar{
+    width: 6px;
+}
+
+.div-entry-table::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.div-entry-table::-webkit-scrollbar-thumb:hover {
+    background: #519AF7;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.div-egress-table {
+    width: 45%;
+    max-height: 110vh;
+    overflow: scroll;
+}
+
+.div-egress-table::-webkit-scrollbar{
+    width: 6px;
+}
+
+.div-egress-table::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.div-egress-table::-webkit-scrollbar-thumb:hover {
+    background: #519AF7;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon {
+    cursor: pointer;
+}
+
+.button-remove {
+    border: none;
+    padding: 0;
+    background: none;
+    color: inherit;
+}
+
+.modify {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.3rem;
+}
+
+.modify button {
+    width: 5.75rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-device-width: 700px) {
+    .div-entry-table {
+        width: 98%;
+        margin-left: 1%;
+    }
+    .div-egress-table {
+        width: 98%;
+        margin: 1%;
+    }
+    .table-main-container {
+        display: block;
+    }
+    .buttonForm h6 {
+        font-size: 1.5rem;
+    }
+    .modal-content {
+        height: 70vh !important;
+        width: 70vw !important;
+        margin-left: 15vw;
+    }
+    .modal-dialog {
+        max-width: none !important;
+    }
+    .modal-title {
+        font-size: 2rem;
+    }
+    .label-form {
+        font-size: 1.5rem;
+    }
+    .form-control {
+        height: 4rem !important;
+        font-size: 1.5rem !important;
+    }
+    .button-modal {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-device-width: 550px) {
+    .modal-content {
+        height: 70vh !important;
+        width: 90vw !important;
+        margin-left: 5vw;
+    }
+    .modal-title {
+        font-size: 2.5rem;
+    }
+    .label-form {
+        font-size: 2.3rem;
+    }
+    .form-control {
+        height: 6rem !important;
+        font-size: 2rem !important;
+    }
+    .button-modal {
+        font-size: 2.1rem !important;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    .buttonForm h6 {
+        font-size: 1.8rem;
+    }
+    .modal-content {
+        height: 80vh !important;
+        width: 96vw !important;
+        margin-left: 2vw;
+    }
+    .modal-title {
+        font-size: 3rem;
+    }
+    .label-form {
+        font-size: 2.8rem;
+    }
+    .form-control {
+        height: 10rem !important;
+        font-size: 2.5rem !important;
+    }
+    .button-modal {
+        font-size: 2.8rem !important;
+    }
+}
