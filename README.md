@@ -12,7 +12,7 @@ incluir un archivo ".env" en la raíz de la carpeta BackEnd con la variables de 
 Puedes hacerlo creándote una cuenta en MongoDB atlas <br />
 bien explicado aquí: <a href="https://www.youtube.com/watch?v=ZVRaBD3-m4o">Backend con NODE JS / EXPRESS / MONGO</a> <br />
 
-Instalación 🔧 <br />
+# Instalación 🔧 <br />
 abrir la consola del sistema dentro de la carpeta raíz del FrontEnd y correr el comando para instalar las dependencias ⌨️ <br />
 repetir este paso para la carpeta BackEnd, ejemplo: <br />
 
@@ -23,15 +23,15 @@ Instalará los paquetes necesarios y luego correr el comando: <br />
 npm start - tanto en back como en front <br />
 Construido con 🛠️ <br />
 <i>React</i> <br />
-Redux <br />
-Node.js <br />
-Express.js <br />
-Mongoose <br />
-MongoDB <br />
-JsonWebToken <br />
-Autores ✒️ <br />
-Proyecto Challenge de Mindhub <br />
+<i>Redux</i> <br />
+<i>Node.js</i> <br />
+<i>Express.js<i/> <br />
+<i>Mongoose</i> <br />
+<i>MongoDB</i> <br />
+<i>JsonWebToken</i> <br />
+  <h4>Autores</h4> ✒️ <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
-Mi Gratitud 🎁📢 <br />
+# Mi Gratitud 🎁📢 <br />
+<b style="color: blue;">Alkemy Labs</b>
 A Fernando Biaus 🙌 por su ayuda 👏 (video explicativo conexión a base de datos mongo) 
