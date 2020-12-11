@@ -16,7 +16,7 @@ bien explicado aquí: <a href="https://www.youtube.com/watch?v=ZVRaBD3-m4o"><q>B
 abrir la consola del sistema dentro de la carpeta raíz del FrontEnd y correr el comando para instalar las dependencias ⌨️ <br />
 repetir este paso para la carpeta BackEnd, ejemplo: <br />
 
-  C:\User\Documents\Proyect\frontend>npm install <br />
+ <pre> C:\User\Documents\Proyect\frontend>npm install </pre> <br />
 
 Instalará los paquetes necesarios y luego correr el comando: <br />
 
@@ -26,7 +26,7 @@ Construido con 🛠️ <br />
 <i>Node.js</i> <br />
 <i>Express.js</i> <br />
 <i>Mongoose</i> <br />
-<i>MongoDB</i> <br /></pre> <br />
+<i>MongoDB</i> <br /></pre>
   <h4>Autores ✒️</h4> <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
