@@ -11,9 +11,9 @@ Tener instalado Node.js en el sistema, versión usada (12.18.3)
 incluir un archivo ".env" en la raíz de la carpeta BackEnd con la variables de entorno MONGO_DB para la conección a la base de datos de MongoDB
 Puedes hacerlo creándote una cuenta en MongoDB atlas, bien explicado aquí: <a href="https://www.youtube.com/watch?v=ZVRaBD3-m4o">Backend con NODE JS / EXPRESS / MONGO</a>
 
-Instalación 🔧
+Instalación 🔧 <br />
 abrir la consola del sistema dentro de la carpeta raíz del FrontEnd y correr el comando para instalar las dependencias ⌨️
-repetir este paso para la carpeta BackEnd, ejemplo:
+repetir este paso para la carpeta BackEnd, ejemplo: <br />
 
   C:\User\Documents\Proyect\frontend>npm install
 
