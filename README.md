@@ -1,5 +1,5 @@
-# My Itinerary ✈️ <br />
-Proyecto Sitio de Itinerarios desarrollado full stack MERN
+# Mi Presupuesto ✈️ <br />
+Web app para interactuar con presupuestos personales
 
 # Empezar 🚀 <br />
 Has una copia del proyecto o descárgalo <br />
@@ -33,5 +33,5 @@ Construido con 🛠️ <br />
 Principal - Ivan Emanuel Camperchioli <br />
 
 # Mi Gratitud 🎁📢 <br />
-<b style="color: blue;">Alkemy Labs</b>
+<b style="color: blue !important;">Alkemy Labs</b> <br />
 A Fernando Biaus 🙌 por su ayuda 👏 (video explicativo conexión a base de datos mongo) 
