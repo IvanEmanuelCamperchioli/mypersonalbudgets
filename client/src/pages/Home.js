@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Table, Spinner } from 'reactstrap';
 import LastTen from '../components/LastTen';
 import '../styles/home.css';
-const routes = require('../assets/routes');
+import routes from '../assets/routes'
 
 class Home extends React.Component {
 
@@ -15,15 +15,15 @@ class Home extends React.Component {
         lastTen: []
     }
 
-    componentDidMount() {
-        this.getRegistry()
+    async componentDidMount() {
+        await this.getRegistry()
         window.scrollTo(0, 0)
     }
 
     getRegistry = async () => {
-        const response = await axios.get(`${routes.route}/api/registry`)
+        const response = await axios.get(`${routes}/api/registry`)
         const data = response.data.registry
-        await this.setState({ data })
+        this.setState({ data })
         this.separator(data)
         this.lastTen(data)
     }

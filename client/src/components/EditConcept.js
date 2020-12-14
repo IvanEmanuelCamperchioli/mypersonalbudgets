@@ -5,7 +5,7 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import swal from 'sweetalert';
 import '../styles/operations.css';
-const routes = require('../assets/routes');
+import routes from '../assets/routes'
 
 const EditConcept = props => {
 
@@ -35,7 +35,7 @@ const EditConcept = props => {
         if(concept === "") {
             alert(`No se ha modificado el concepto ${data}`)
         } else {
-            const response = await axios.put(`${routes.route}/api/modify/concept/${idToModify}`, { concept: concept })
+            const response = await axios.put(`${routes}/api/modify/concept/${idToModify}`, { concept: concept })
             response.data.success === true ? notify() : err()    
         };
     }

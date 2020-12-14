@@ -1,6 +1,4 @@
 
-const routes = {
-    route: "http://localhost:4000"
-}
+const routes = "https://mypersonalbudgets.herokuapp.com"
 
-module.exports = routes
+export default routes;

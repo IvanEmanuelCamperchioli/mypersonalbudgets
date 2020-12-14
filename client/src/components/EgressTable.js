@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import swal from 'sweetalert';
 import axios from 'axios'
-import routes from '../assets/routes';
 import '../styles/operations.css';
 import EditConcept from './EditConcept';
 import EditAmount from './EditAmount';
+import routes from '../assets/routes';
+
 
 const EgressTable = props => {
 
@@ -36,7 +37,7 @@ const EgressTable = props => {
 
     const remove = async id => {
         const idToRemove = id
-        const response = await axios.delete(`${routes.route}/api/registry/${idToRemove}`)
+        const response = await axios.delete(`${routes}/api/registry/${idToRemove}`)
         if (response.data.success) props.getRegistry()
     }
 
@@ -45,7 +46,7 @@ const EgressTable = props => {
         <div className="div-egress-table">
             <Table dark>
                 <thead>
-                    <tr>
+                    <tr className="tr-table">
                         <th></th>
                         <th><p>Fecha</p></th>
                         <th><p>Tipo</p></th>

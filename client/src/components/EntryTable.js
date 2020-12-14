@@ -34,7 +34,7 @@ const EntryTable = props => {
 
     const remove = async id => {
         const idToRemove = id
-        const response = await axios.delete(`${routes.route}/api/registry/${idToRemove}`)
+        const response = await axios.delete(`${routes}/api/registry/${idToRemove}`)
         if (response.data.success) props.getRegistry();
     }
 
@@ -44,7 +44,7 @@ const EntryTable = props => {
         <div className="div-entry-table">
             <Table dark>
                 <thead>
-                    <tr>
+                    <tr className="tr-table">
                         <th></th>
                         <th><p>Fecha</p></th>
                         <th><p>Tipo</p></th>

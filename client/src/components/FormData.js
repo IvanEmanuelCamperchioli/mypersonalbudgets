@@ -7,7 +7,7 @@ import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import '../styles/operations.css';
-const routes = require('../assets/routes');
+import routes from '../assets/routes'
 
 
 class FormData extends React.Component {
@@ -66,7 +66,7 @@ class FormData extends React.Component {
             }
 
             // Send data through axios request
-            await axios.post(`${routes.route}/api/registry`, registry)
+            await axios.post(`${routes}/api/registry`, registry)
             .then( async response => {
                 if(response.data.success === true) {
                     await this.setState({ modal: !this.state.modal })
@@ -175,7 +175,7 @@ class FormData extends React.Component {
                     </Modal>
                 </div>
                 <div>
-                    <ToastContainer style={{ width: '30vw' }} />
+                    <ToastContainer className="toast-container" />
                 </div>
             </>
         );
