@@ -54,7 +54,7 @@ class FormData extends React.Component {
 
         // Easy verify
         const { type, concept, amount, date } = this.state
-        if( type === '' || concept === '' || amount === 0 || date === '' ) {
+        if( type === '' || concept === '' || amount === "" || date === '' ) {
             alert("Hay datos incompletos")
             this.setState({ disabled: false })
         } else {
