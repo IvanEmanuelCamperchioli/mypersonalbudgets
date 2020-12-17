@@ -3,12 +3,11 @@ import axios from 'axios';
 import { Table, Spinner } from 'reactstrap';
 import LastTen from '../components/LastTen';
 import '../styles/home.css';
-import routes from '../assets/routes'
+import route from '../assets/route'
 
 class Home extends React.Component {
 
     state = {
-        data: [],
         totalEntry: 0,
         totalEgress: 0,
         result: 0,
@@ -21,9 +20,8 @@ class Home extends React.Component {
     }
 
     getRegistry = async () => {
-        const response = await axios.get(`${routes}/api/registry`)
+        const response = await axios.get(`${route}/api/registry`)
         const data = response.data.registry
-        this.setState({ data })
         this.separator(data)
         this.lastTen(data)
     }

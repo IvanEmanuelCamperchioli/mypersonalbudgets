@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import swal from 'sweetalert';
 import axios from 'axios';
-import routes from '../assets/routes';
+import route from '../assets/route';
 import EditConcept from './EditConcept';
 import EditAmount from './EditAmount';
 import '../styles/operations.css';
@@ -34,7 +34,7 @@ const EntryTable = props => {
 
     const remove = async id => {
         const idToRemove = id
-        const response = await axios.delete(`${routes}/api/registry/${idToRemove}`)
+        const response = await axios.delete(`${route}/api/registry/${idToRemove}`)
         if (response.data.success) props.getRegistry();
     }
 

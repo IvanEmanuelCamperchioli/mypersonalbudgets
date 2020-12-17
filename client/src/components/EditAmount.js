@@ -5,7 +5,7 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import swal from 'sweetalert';
 import '../styles/operations.css';
-import routes from '../assets/routes'
+import route from '../assets/route'
 
 const EditAmount = props => {
 
@@ -35,7 +35,7 @@ const EditAmount = props => {
         if(amount === 0) {
             alert(`No se ha modificado el monto ${data}`)
         } else {
-            const response = await axios.put(`${routes}/api/modify/amount/${idToModify}`, { amount: amount })
+            const response = await axios.put(`${route}/api/modify/amount/${idToModify}`, { amount: amount })
             response.data.success === true ? notify() : err()    
         };
     }

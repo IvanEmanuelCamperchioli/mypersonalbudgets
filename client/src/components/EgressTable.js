@@ -7,7 +7,7 @@ import axios from 'axios'
 import '../styles/operations.css';
 import EditConcept from './EditConcept';
 import EditAmount from './EditAmount';
-import routes from '../assets/routes';
+import route from '../assets/route';
 
 
 const EgressTable = props => {
@@ -37,7 +37,7 @@ const EgressTable = props => {
 
     const remove = async id => {
         const idToRemove = id
-        const response = await axios.delete(`${routes}/api/registry/${idToRemove}`)
+        const response = await axios.delete(`${route}/api/registry/${idToRemove}`)
         if (response.data.success) props.getRegistry()
     }
 

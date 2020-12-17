@@ -7,7 +7,7 @@ import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import '../styles/operations.css';
-import routes from '../assets/routes'
+import route from '../assets/route'
 
 
 class FormData extends React.Component {
@@ -66,7 +66,7 @@ class FormData extends React.Component {
             }
 
             // Send data through axios request
-            await axios.post(`${routes}/api/registry`, registry)
+            await axios.post(`${route}/api/registry`, registry)
             .then( async response => {
                 if(response.data.success === true) {
                     await this.setState({ modal: !this.state.modal })
@@ -81,6 +81,7 @@ class FormData extends React.Component {
                 }  
             })
             .catch(error => {
+                alert('Hubo un problema al intentar cargar los datos')
                 this.setState({
                     type: '', 
                     concept: '', 
@@ -88,7 +89,6 @@ class FormData extends React.Component {
                     date: '',
                     disabled: !this.state.disabled 
                 });
-                alert('Hubo un problema al intentar cargar los datos')
                 this.toggle()
             });
         };

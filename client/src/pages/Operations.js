@@ -4,7 +4,7 @@ import FormData from '../components/FormData';
 import EntryTable from '../components/EntryTable';
 import EgressTable from '../components/EgressTable';
 import '../styles/operations.css';
-import routes from '../assets/routes';
+import route from '../assets/route';
 
 class Operations extends React.Component {
 
@@ -18,7 +18,7 @@ class Operations extends React.Component {
     }
 
     getRegistry = async () => {
-        const response = await axios.get(`${routes}/api/registry`)
+        const response = await axios.get(`${route}/api/registry`)
         const data = response.data.registry
         this.setState({ data })
     }
