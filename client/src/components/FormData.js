@@ -54,7 +54,7 @@ class FormData extends React.Component {
 
         // Easy verify
         const { type, concept, amount, date } = this.state
-        if( type === '' || concept === '' || amount === "" || date === '' ) {
+        if( type === '' || concept === '' || amount === '' || date === '' ) {
             alert("Hay datos incompletos")
             this.setState({ disabled: false })
         } else {
@@ -121,7 +121,7 @@ class FormData extends React.Component {
                                         name="type" 
                                         onChange={this.getData}
                                     >
-                                        <option>--Selecciona una operación--</option>
+                                        <option value="">--Selecciona una operación--</option>
                                         <option name="Ingreso">Ingreso</option>
                                         <option name="Egreso">Egreso</option>
                                     </Input>

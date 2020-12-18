@@ -10,7 +10,7 @@ class Header extends React.Component {
             <div className="header">
                 <h1 className="logo">Mis presupuestos</h1>
                 <div className="header-right">
-                    <NavLink className="menu" to="/" >Home</NavLink>
+                    <NavLink className="menu" to="/" >Inicio</NavLink>
                     <NavLink className="menu" to='/operations' >Operaciones</NavLink>
                 </div>
             </div>
