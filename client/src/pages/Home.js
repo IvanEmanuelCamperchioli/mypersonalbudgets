@@ -16,6 +16,7 @@ class Home extends React.Component {
 
     async componentDidMount() {
         await this.getRegistry()
+        await this.getLastTen()
         window.scrollTo(0, 0)
     }
 
@@ -23,7 +24,12 @@ class Home extends React.Component {
         const response = await axios.get(`${route}/api/registry`)
         const data = response.data.registry
         this.separator(data)
-        this.lastTen(data)
+    }
+
+    getLastTen = async () => {
+        const response = await axios.get(`${route}/api/registry/last_ten`)
+        const data = response.data.registry
+        this.setState({ lastTen: data })
     }
 
     balance = (paramEntry, paramEgress) => {
@@ -49,11 +55,6 @@ class Home extends React.Component {
             }; 
         });
         this.balance(arrEntry, arrEgress)
-    }
-
-    lastTen = async data => {
-        const lastTen = await data.slice(-10).reverse()  
-        this.setState({ lastTen })
     }
 
     render() { 

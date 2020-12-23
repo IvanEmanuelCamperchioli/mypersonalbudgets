@@ -13,6 +13,16 @@ const registryController = {
         });
     },
 
+    getLastTenFromRegistry: async (req, res) => {
+
+        const registry = await Registry.find().limit(10).sort({$natural:-1})
+
+        res.json({
+            success: true,
+            registry
+        })
+    },
+
     // POST
     loadRegister: async (req, res) => {
 
@@ -34,7 +44,7 @@ const registryController = {
             });
     },
 
-    removeDataOfRegistry: async (req, res) => {
+    removeDataFromRegistry: async (req, res) => {
 
         const id = req.params.id;
 
@@ -43,34 +53,29 @@ const registryController = {
         res.json({ success: true });
     },
 
-    ModifyConceptOfRegistry: async (req, res) => {
+    ModifyDataFromRegistry: async (req, res) => {
 
-        await Registry.findByIdAndUpdate(
-            req.params.id,
-            { concept: req.body.concept },
-            function (err) {
-                if (err) {
-                    res.json({ success: false });
-                } else {
-                    res.json({ success: true });
-                };
-            }
-        );
-    },
-
-    ModifyAmountOfRegistry: async (req, res) => {
-
-        await Registry.findByIdAndUpdate(
-            req.params.id, 
-            { amount: req.body.amount }, 
-            function (err) {
-                if (err) {
-                    res.json({ success: false });
-                } else {
-                    res.json({ success: true });
-                };
-            }
-        );
+        await findToModify(req.body.concept, req.body.amount, req.params.id)
+        
+        async function findToModify(concept, amount, id) {
+            if(concept !== undefined) {
+                await Registry.findByIdAndUpdate( id, { concept: concept } ,
+                    function (err) {
+                        if (err) { 
+                            res.json({ success: false });
+                        } else res.json({ success: true });
+                    }
+                );
+            } else {
+                await Registry.findByIdAndUpdate( id, { amount: amount } ,
+                    function (err) {
+                        if (err) { 
+                            res.json({ success: false });
+                        } else res.json({ success: true });
+                    }
+                );
+            } 
+        }
     }
 };
 

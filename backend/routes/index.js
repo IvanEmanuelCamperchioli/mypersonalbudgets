@@ -6,19 +6,19 @@ const registryController = require('../controllers/registryController');
 
 // provide and get from registry
 routes.route('/registry')
-      .get(registryController.getRegistry)
-      .post(registryController.loadRegister);
+.get(registryController.getRegistry)
+.post(registryController.loadRegister);
+
+routes.route('/registry/last_ten')
+.get(registryController.getLastTenFromRegistry)
 
 // delete data
 routes.route('/registry/:id')
-      .delete(registryController.removeDataOfRegistry)
+.delete(registryController.removeDataFromRegistry)
       
 // Modifications
-routes.route('/modify/concept/:id')
-      .put(registryController.ModifyConceptOfRegistry);
-
-routes.route('/modify/amount/:id')
-      .put(registryController.ModifyAmountOfRegistry);
+routes.route('/modify/:id')
+.put(registryController.ModifyDataFromRegistry);
 
 
 module.exports = routes;

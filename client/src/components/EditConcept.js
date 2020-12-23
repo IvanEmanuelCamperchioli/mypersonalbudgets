@@ -13,7 +13,7 @@ const EditConcept = props => {
 
     const [concept, setConcept] = useState("")
 
-    const modify = async () => {
+    const modify = () => {
         setToModify(true)
     }
 
@@ -35,15 +35,15 @@ const EditConcept = props => {
         if(concept === "") {
             alert(`No se ha modificado el concepto ${data}`)
         } else {
-            const response = await axios.put(`${route}/api/modify/concept/${idToModify}`, { concept: concept })
+            const response = await axios.put(`${route}/api/modify/${idToModify}`, { concept: concept })
             response.data.success === true ? notify() : err()    
+            setConcept("")
         };
     }
 
     const cancel = () => setToModify(false)
 
     return (
-        <>
             <td>
                 {!toModify
                     ? <p>{props.data}</p>
@@ -71,7 +71,6 @@ const EditConcept = props => {
                     onClick={modify}
                 />
             </td>
-        </>
     );
 };
 

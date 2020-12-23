@@ -35,8 +35,9 @@ const EditAmount = props => {
         if(amount === 0) {
             alert(`No se ha modificado el monto ${data}`)
         } else {
-            const response = await axios.put(`${route}/api/modify/amount/${idToModify}`, { amount: amount })
-            response.data.success === true ? notify() : err()    
+            const response = await axios.put(`${route}/api/modify/${idToModify}`, { amount: amount })
+            response.data.success === true ? notify() : err()   
+            setAmount(0) 
         };
     }
 

@@ -59,10 +59,7 @@ class FormData extends React.Component {
             this.setState({ disabled: false })
         } else {
             const registry = {
-                type: this.state.type,
-                concept: this.state.concept,
-                amount: this.state.amount,
-                date: this.state.date
+                type, concept, amount, date
             }
 
             // Send data through axios request
