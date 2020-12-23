@@ -4,7 +4,6 @@ Web app para interactuar con presupuestos personales
 # Empezar 🚀 <br />
 Has una copia del proyecto o descárgalo <br />
 npm install en client y backEnd para instalar las dependencias <br />
-Si quieres ver una demostración de la app ingresa a <a href="https://mypersonalbudgets.herokuapp.com/">mypersonalbudgets.herokuapp.com</a> <br />
 
 # Pre-requisitos 📋 <br />
 Tener instalado Node.js en el sistema, versión usada (12.18.3) <br />
